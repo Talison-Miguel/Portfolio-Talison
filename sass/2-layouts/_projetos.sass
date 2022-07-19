@@ -1,0 +1,91 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.projetos
+    background-color: variables.$color-black
+
+.container-projetos-conteudo
+    @include layouts-mixins.center-content
+    display: flex
+    flex-wrap: wrap
+    gap: 4.5rem
+    justify-content: center
+
+
+
+    &-item, a
+        border: 2px solid variables.$color-white
+        box-sizing: border-box
+        width: 20%
+        min-width: 11.875rem
+        height: 14rem
+        padding: 80px 0
+        justify-content: center
+        display: flex
+        text-align: center
+        align-items: center
+        position: relative
+        transition: transform .5s, border .5s
+
+        &::after
+            content: ''
+            display: block
+            min-width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.8)
+            position: absolute
+            transition: background .5s
+
+        &-title
+            font-size: 1.1rem
+            font-family: variables.$Montserrat-font
+            color: variables.$color-white
+            text-transform: uppercase
+            z-index: 2
+
+            @include base-mixins.mobile-sm
+                font-size: 1rem
+
+        &:hover
+            z-index: 4
+            cursor: pointer
+            transform: scale(1.08)
+
+            &::after
+                background: rgba(0, 0, 0, 0.4)
+
+    .bia 
+        background-image: url("../imgs/background-bia.jpg")
+        background-position: center
+        @include layouts-mixins.img-projetos
+
+    .miami    
+        background-image: url("../imgs/background-miami.jpg")
+        background-position: center
+        @include layouts-mixins.img-projetos
+
+    .electrum
+        background-image: url("../imgs/background-electrum.jpg")
+        background-position: left
+        @include layouts-mixins.img-projetos
+    
+    .agency
+        background-image: url("../imgs/background-agency.jpg")
+        background-position: left
+        @include layouts-mixins.img-projetos
+
+    .formValid
+        background-image: url("../imgs/background-formValid.jpg")
+        background-position: center
+        @include layouts-mixins.img-projetos
+
+    .listTaref
+        background-image: url("../imgs/background-listTaref.jpg")
+        background-position: center
+        @include layouts-mixins.img-projetos
+
+    .feedback
+        background-image: url("../imgs/background-feedback.jpg")
+        background-position: center
+        @include layouts-mixins.img-projetos

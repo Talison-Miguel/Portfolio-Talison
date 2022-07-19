@@ -1,0 +1,83 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.contato
+    background-color: variables.$color-gray
+    font-family: variables.$Open-Sans-font
+
+
+.container-contato
+    @include layouts-mixins.center-content
+
+    p
+        text-align: center
+        margin-bottom: 4rem
+
+    li
+        margin-bottom: 0.875rem
+        margin: 0 auto
+        
+    &-gmail
+        padding: 0.4rem
+
+        &::hover
+            color: blue
+
+        img
+            margin: 0 auto
+            display: block
+            margin-bottom: 10px
+
+        .copy
+            display: inline-block
+            margin: 0
+            cursor: copy
+            margin-bottom: -2px
+
+        &-span
+            text-align: center
+            color: white
+            position: relative
+
+        .animaçao    
+            transition: width 2s
+            color: variables.$color-blue
+
+    &-list
+        display: flex
+        gap: 30px
+        flex-wrap: wrap
+        @include base-mixins.mobile-xs
+            gap: 60px
+
+        &-li
+            padding: 0.400rem
+            width: 66px
+            border: 1px solid transparent
+            transition: border .5s, color .5s
+            position: relative
+            @include base-mixins.mobile-xs
+                width: 100%
+                
+            &:hover
+                border: 1px solid white
+                transform: scale(1.1)
+
+                span
+                    color: variables.$color-blue
+
+        &-item
+            text-align: center
+            text-decoration: none
+            color: variables.$color-white
+            vertical-align: bottom
+
+            img
+                margin: 0 auto
+                display: block
+                margin-bottom: 10px
+
+            &-span
+                text-align: center
+                display: block

@@ -1,0 +1,15 @@
+// @xs: 480px
+// @sm: 768px
+// @md: 1280px 
+
+@mixin mobile-xs
+    @media (max-width: 480px)
+        @content
+
+@mixin mobile-sm
+    @media (max-width: 768px)
+        @content
+
+@mixin mobile-md
+    @media (max-width: 1280px)
+        @content

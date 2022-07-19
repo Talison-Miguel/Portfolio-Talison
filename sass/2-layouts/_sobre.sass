@@ -1,0 +1,105 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.sobre
+    background-color: variables.$color-black
+    font-family: variables.$Montserrat-font
+
+.sobre-container
+    @include layouts-mixins.center-content
+
+    &-conteudo
+        display: flex
+        gap: 4.5rem
+
+        @include base-mixins.mobile-sm
+            display: block
+
+        &-containerFt
+            @include base-mixins.mobile-sm
+                display: flex
+                justify-content: center
+                margin-bottom: 2.5rem
+                padding: 0 2.5rem
+
+    &-foto
+        max-width: 100%
+
+        @include base-mixins.mobile-sm
+            max-width: 80%
+
+    &-text
+        width: 60%
+        
+        @include base-mixins.mobile-sm
+            margin: 0 auto
+            max-width: 80%
+            width: auto
+
+        &-h2
+            font-size: 1.875rem
+            color: variables.$color-white
+            font-weight: 600
+            line-height: 1.2
+            margin-bottom: 3.125rem
+            color: variables.$color-blue
+
+            @include base-mixins.mobile-sm
+                text-align: center
+
+        &-paragraf
+            font-size: 0.875rem
+            font-family: variables.$Open-Sans-font
+            line-height: 1.5
+            margin-bottom: 1.875rem
+            text-align: justify 
+            font-weight: 600
+
+            &:last-child
+                display: block
+                text-align: end
+                font-weight: 400
+
+            .stev-jobs
+                font-weight: 400
+                font-size: 12px
+                display: block
+                text-align: end
+                color: variables.$color-blue
+
+    .cite
+        color: variables.$color-blue
+        position: relative
+        display: inline-block
+
+.foguete
+    margin-left: 18px
+    top: -16px
+    animation-name: ativarfoguete
+    position: absolute
+    animation: ativarfoguete 1.6s linear infinite
+    transform-origin: 28px 28px 
+    @include base-mixins.mobile-xs
+        top: 0
+        
+    
+    @keyframes ativarfoguete
+        0%
+            transform: rotate(0deg)
+
+        100%
+            transform: rotate(360deg)
+
+.planetaTerra
+    position: absolute
+    margin-left: 35px
+    @include base-mixins.mobile-xs
+        display: none
+
+.planetaTerra, .foguete
+    @include base-mixins.mobile-xs
+        animation: desativar
+        
+
+        

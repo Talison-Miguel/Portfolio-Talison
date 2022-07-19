@@ -1,0 +1,28 @@
+@use '../2-layouts/layouts-mixins'
+@use '../1-base/_base-mixins'
+@use 'variables'
+
+html
+    scroll-behavior: smooth
+
+.container
+    @include layouts-mixins.center-content
+
+section
+    padding: 95px 0
+
+h1
+    color: #fff
+    font-size: 2.5rem
+    font-weight: 800
+    font-family: "Montserrat"
+    display: block
+    text-align: center
+    padding-bottom: 5rem
+
+    @include base-mixins.mobile-sm
+        font-size: 2.1rem
+
+p
+    color: variables.$color-white
+

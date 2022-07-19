@@ -1,0 +1,68 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use 'layouts-mixins'
+
+.competencias
+    background-color: variables.$color-gray
+
+    &-container
+        @include layouts-mixins.center-content
+
+        &-lista
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            gap: 4.5rem //72px
+
+            &-item
+                width: 20%
+                min-width: 11.875rem //190px
+                padding: 40px 0
+                border: 1px solid variables.$color-gray
+                box-sizing: border-box
+                position: relative
+                
+
+                &:hover
+                    &::before, &::after
+                        opacity: 1
+                        width: 1.125rem
+                        height: 1.125rem
+
+                &::before, &::after
+                    content: ''
+                    width: 0
+                    height: 0
+                    opacity: 0
+                    display: block
+                    position: absolute
+                    transition: width .5s, height .5s, opacity .8s
+
+                &::before
+                    top: 0
+                    left: 0
+                    border-top: 2px solid variables.$color-white
+                    border-left: 2px solid variables.$color-white
+
+                &::after
+                    bottom: 0
+                    right: 0
+                    border-bottom: 2px solid variables.$color-white
+                    border-right: 2px solid variables.$color-white
+
+
+                img
+                    margin: 0 auto
+                    display: block
+
+
+                h3
+                    font-size: 1.25rem
+                    color: variables.$color-white
+                    font-weight: 600
+                    line-height: 1.2
+                    text-align: center
+                    margin-top: 1.125rem
+
+
+                    
