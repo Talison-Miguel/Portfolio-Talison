@@ -9,6 +9,8 @@
 
 .container-contato
     @include layouts-mixins.center-content
+    @include base-mixins.mobile-smm
+        padding: 0 1rem
 
     p
         text-align: center
@@ -58,8 +60,8 @@
             transition: border .5s, color .5s
             position: relative
             @include base-mixins.mobile-xs
-                width: 100%
-                
+                display: block
+
             &:hover
                 border: 1px solid white
                 transform: scale(1.1)

@@ -95,7 +95,7 @@ header {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   header {
     min-height: 100vh;
   }
@@ -129,12 +129,12 @@ header {
   z-index: 99;
   transition: all 2s;
 }
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .header-top {
     background-color: rgba(0, 0, 0, 0.95);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .header-top .logo {
     padding-left: 16px;
   }
@@ -143,7 +143,7 @@ header {
   display: flex;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .header-top-navigation {
     display: none;
   }
@@ -182,7 +182,7 @@ header {
 .header-top-containerHambuguer {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .header-top-containerHambuguer {
     display: flex;
     padding-right: 16px;
@@ -338,6 +338,11 @@ header {
   max-width: 1080px;
   margin: 0 auto;
 }
+@media (max-width: 1090px) {
+  .sobre-container {
+    padding: 0 1rem;
+  }
+}
 .sobre-container-conteudo {
   display: flex;
   gap: 4.5rem;
@@ -352,7 +357,7 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 2.5rem;
-    padding: 0 2.5rem;
+    padding: 0 1rem;
   }
 }
 .sobre-container-foto {
@@ -369,7 +374,7 @@ header {
 @media (max-width: 768px) {
   .sobre-container-text {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     width: auto;
   }
 }
@@ -425,6 +430,11 @@ header {
     top: 0;
   }
 }
+@media (max-width: 350px) {
+  .foguete {
+    position: static;
+  }
+}
 @keyframes ativarfoguete {
   0% {
     transform: rotate(0deg);
@@ -456,6 +466,11 @@ header {
 .competencias-container {
   max-width: 1080px;
   margin: 0 auto;
+}
+@media (max-width: 1090px) {
+  .competencias-container {
+    padding: 0 1rem;
+  }
 }
 .competencias-container-lista {
   display: flex;
@@ -521,6 +536,11 @@ header {
   flex-wrap: wrap;
   gap: 4.5rem;
   justify-content: center;
+}
+@media (max-width: 1090px) {
+  .container-projetos-conteudo {
+    padding: 0 1rem;
+  }
 }
 .container-projetos-conteudo-item, .container-projetos-conteudo a {
   border: 2px solid #fff;
@@ -617,6 +637,11 @@ header {
   max-width: 1080px;
   margin: 0 auto;
 }
+@media (max-width: 1090px) {
+  .container-contato {
+    padding: 0 1rem;
+  }
+}
 .container-contato p {
   text-align: center;
   margin-bottom: 4rem;
@@ -670,7 +695,7 @@ header {
 }
 @media (max-width: 480px) {
   .container-contato-list-li {
-    width: 100%;
+    display: block;
   }
 }
 .container-contato-list-li:hover {

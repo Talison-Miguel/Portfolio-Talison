@@ -10,7 +10,7 @@ header
     background-attachment: scroll
     font-family: variables.$Montserrat-font
     text-transform: uppercase
-    @include base-mixins.mobile-sm
+    @include base-mixins.mobile-smm
         min-height: 100vh
 
 .container-menu 
@@ -21,8 +21,7 @@ header
     position: fixed
     top: 0
     width: 100%
-    background-color: rgba(0, 0, 0, 0.8)
-
+    background-color: rgba(0, 0, 0, 0.8)        
 
 .scroll
     background-color: rgba(0, 0, 0, 0.8)
@@ -39,17 +38,17 @@ header
     position: fixed
     z-index: 99
     transition: all 2s
-    @include base-mixins.mobile-sm
+    @include base-mixins.mobile-smm
         background-color: rgba(0, 0, 0, 0.95)
 
     .logo 
-        @include base-mixins.mobile-sm
+        @include base-mixins.mobile-smm
             padding-left: 16px
     
     &-navigation
         display: flex
         color: variables.$color-white
-        @include base-mixins.mobile-sm
+        @include base-mixins.mobile-smm
             display: none
 
         li 
@@ -84,7 +83,7 @@ header
 
     &-containerHambuguer
         display: none    
-        @include base-mixins.mobile-sm
+        @include base-mixins.mobile-smm
             display: flex    
             padding-right: 16px    
 

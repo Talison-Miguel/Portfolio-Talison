@@ -1,8 +1,9 @@
 'use strict'
 
 //Menu Hamburguer
-let menuHamburguer = document.querySelector('#checkbox-menu');
-let navegacao      = document.querySelector('.header-top-navigation')
+let menuHamburguer   = document.querySelector('#checkbox-menu');
+let navegacao        = document.querySelector('.header-top-navigation')
+let linksDeNavegaçao = document.querySelectorAll('.header-top-navigation li a') 
 
 function checarMenuHamburgue() {
     if(menuHamburguer.checked == true) {
@@ -13,6 +14,7 @@ function checarMenuHamburgue() {
 }
 
 menuHamburguer.addEventListener('change', checarMenuHamburgue);
+//Melhoria _ fechar o menu ao clickar em cada link
 
 
 //Copiar Email
@@ -53,25 +55,6 @@ AOS.init({
 // })
 
 // console.log(menu.scrollTop >= '100px')
-
-
-// const TypeWriter = require('t-writer.js');
-// import Typewriter from 't-writer.js'
-
-// const target = document.querySelector('.target-maquinaJs');
-// const writer = new TypeWriter(target, {
-// 	loop: true,
-// 	typeColor: 'blue'
-// });
-
-// writer
-// 	.type('Muito obrigado por conferir este código!')
-// 	.rest(500)
-// 	.start();
-
-// console.log(TypeWriter)
-
-
 
 
 //Efeito maquina de escrever
