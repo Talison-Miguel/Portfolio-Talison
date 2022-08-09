@@ -463,7 +463,11 @@ ul {
   transition: color 0.2s;
 }
 
-.btn-exit:hover {
+.fa-x {
+  color: black;
+}
+
+.fa-x:hover {
   color: #b42d3d;
 }
 
