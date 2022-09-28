@@ -42,19 +42,23 @@ AOS.init({
 });
 
 
-//Animaçao do scroll do mouse pra aparecer o fundo preto
-// const menu = document.querySelector('.container-menu')
+//Animaçao do scroll do mouse para aparecer o fundo preto
+const menuClass = document.getElementsByClassName('scroll')
+const menu = document.getElementsByClassName('container-menu')
+const headerTop = document.getElementsByClassName('header-top')
 
-// menu.addEventListener('scroll', function() {
-//     if(menu.scrollTop >= '100px'){
-//         menu.classList.add('scroll');
-//     }
-//     else{
-//         menu.classList.add('scroll');  
-//     }
-// })
+scrollTo(0, 0)
+function scrollAnimation() {
+    if(pageYOffset > 110 && !menuClass[0]) {
+        menu[0].classList.add('scroll')
+    } else if(pageYOffset < 110 && menuClass[0]) {
+        menu[0].classList.remove('scroll')
+    }
+}
 
-// console.log(menu.scrollTop >= '100px')
+console.log(menu)
+window.addEventListener('scroll', scrollAnimation)
+
 
 
 //Efeito maquina de escrever

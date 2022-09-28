@@ -90,6 +90,7 @@ header {
   background-image: url(../imgs/hero.jpg);
   min-height: 660px;
   background-size: cover;
+  height: 87px;
   background-position: center;
   background-attachment: scroll;
   font-family: "Montserrat", sans-serif;
@@ -105,15 +106,19 @@ header {
   justify-content: center;
   display: flex;
   z-index: 5;
-  height: 87px;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 104px;
+  align-items: center;
+  background-color: transparent;
+  transition: height 1s;
 }
 
 .scroll {
   background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
+  height: 84px;
 }
 
 .header-top {
