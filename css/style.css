@@ -109,16 +109,26 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 104px;
+  height: 6.5rem;
   align-items: center;
   background-color: transparent;
   transition: height 1s;
+}
+@media (max-width: 1090px) {
+  .container-menu {
+    height: 5.438rem;
+  }
 }
 
 .scroll {
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.5s ease;
-  height: 84px;
+  height: 5.25rem;
+}
+@media (max-width: 1090px) {
+  .scroll {
+    height: 5.438rem;
+  }
 }
 
 .header-top {
