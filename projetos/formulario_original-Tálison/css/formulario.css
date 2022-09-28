@@ -1,12 +1,3 @@
-/**,
-*::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing:inherit;
-    letter-spacing: inherit;
-}*/
-
 body{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .1rem;   
@@ -127,3 +118,12 @@ textarea{
     transform: translateY(0px);
 }
 
+@media (max-width: 768px) {
+    .formCadastro__container{
+        margin: 0 20px;
+    }
+
+    .formCadastro__container >.heading{
+        font-size: 1.5rem;
+    }
+}
