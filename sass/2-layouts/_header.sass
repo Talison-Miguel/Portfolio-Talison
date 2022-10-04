@@ -72,7 +72,14 @@ header
 
             a
                 transition: .4s
+                border-bottom: 3px solid transparent
                 @include layouts-mixins.hover-blue 
+
+    .actived
+        border-bottom: 3px solid variables.$color-blue
+        color: variables.$color-blue
+        padding: 2px
+
 
     //classe que vai ser adicionada ao clicar no menu hamburguer
     .menuHamburguer

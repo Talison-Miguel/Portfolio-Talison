@@ -73,3 +73,46 @@ function typeWriter(elemento) {
 }
 
 typeWriter(titulo);
+
+
+
+//Link ativo do menu
+const menuNav = document.querySelector('.header-top')
+const links = menuNav.querySelectorAll('li a')
+
+function destacaMenu() {
+
+    //ta pegando cada seçao, s1,s2,s3
+    let positions = [...links].map(link => {
+        let href = link.getAttribute('href')
+        
+        console.log(document.querySelector(link.getAttribute('href')))
+        let h2 = document.querySelector(href)
+
+        return h2.getBoundingClientRect().top
+    })
+
+    let linkAtivo = pegaUltimoElementoVisto(positions)
+    let menuActived = menuNav.querySelector('.actived')
+    if(menuActived) {
+        menuActived.classList.remove('actived')
+    }
+
+    if(linkAtivo) {
+        return linkAtivo.classList.add("actived")
+    }
+
+    return links[0].classList.add('actived')
+    console.log("linkArtivo: " + linkAtivo)
+    console.log(positions)
+}
+
+function pegaUltimoElementoVisto(_positions) {
+    let positions = _positions.filter(n => n < innerHeight / 2)
+
+    return links[positions.length - 1]
+}
+
+window.addEventListener('scroll', destacaMenu)
+
+destacaMenu()

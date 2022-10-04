@@ -173,9 +173,15 @@ header {
 }
 .header-top-navigation li a {
   transition: 0.4s;
+  border-bottom: 3px solid transparent;
 }
 .header-top-navigation li a:hover {
   color: #00b8e4;
+}
+.header-top .actived {
+  border-bottom: 3px solid #00b8e4;
+  color: #00b8e4;
+  padding: 2px;
 }
 .header-top .menuHamburguer {
   position: absolute;
