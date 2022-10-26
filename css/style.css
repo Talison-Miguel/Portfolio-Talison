@@ -91,7 +91,7 @@ header {
   min-height: 660px;
   background-size: cover;
   height: 87px;
-  background-position: center;
+  background-position: 100% 100%;
   background-attachment: scroll;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -99,6 +99,7 @@ header {
 @media (max-width: 1090px) {
   header {
     min-height: 100vh;
+    background-position: center;
   }
 }
 
@@ -558,11 +559,6 @@ header {
   gap: 4.5rem;
   justify-content: center;
 }
-@media (max-width: 1090px) {
-  .container-projetos-conteudo {
-    padding: 0 1rem;
-  }
-}
 .container-projetos-conteudo-item, .container-projetos-conteudo a {
   border: 2px solid #fff;
   box-sizing: border-box;
@@ -644,6 +640,11 @@ header {
 }
 .container-projetos-conteudo .feedback {
   background-image: url("../imgs/background-feedback.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-projetos-conteudo .nlwSports {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

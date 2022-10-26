@@ -11,8 +11,6 @@
     flex-wrap: wrap
     gap: 4.5rem
     justify-content: center
-    @include base-mixins.mobile-smm
-        padding: 0 1rem
 
     &-item, a
         border: 2px solid variables.$color-white
@@ -87,5 +85,10 @@
 
     .feedback
         background-image: url("../imgs/background-feedback.jpg")
+        background-position: center
+        @include layouts-mixins.img-projetos
+
+    .nlwSports
+        // background-image: url("../imgs/background-nlwSports.jpg")
         background-position: center
         @include layouts-mixins.img-projetos
