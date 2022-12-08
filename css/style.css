@@ -132,6 +132,11 @@ header {
   }
 }
 
+.scroll2 p {
+  transition: all 0.3s ease;
+  color: transparent;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
