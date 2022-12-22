@@ -15,7 +15,7 @@ function fechafeedbackMessageBg () {
     bgalert.style.display = "none"
     alert.style.display = "none"
 }
-bgAlert.addEventListener('click', fechafeedbackMessage)
+bgalert.addEventListener('click', fechafeedbackMessage)
 
 function escMessage (event) {
     const tecla = event.keyCode
