@@ -649,8 +649,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.container-projetos-conteudo .nlwSports {
-  background-position: center;
+.container-projetos-conteudo .listAluno {
+  background-image: url("../imgs/lista-alunos.jpg");
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
