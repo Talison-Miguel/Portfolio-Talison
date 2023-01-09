@@ -1,7 +1,5 @@
-//Copiar Email
-
 const iconCopy = document.querySelector('.copy')
-export function copyEmail() {
+function copyEmail() {
     const email = document.querySelector('.container-contato-gmail-span')
 
     navigator.clipboard.writeText(email.textContent);
@@ -15,4 +13,4 @@ export function copyEmail() {
     }, 600);
 }
 
-iconCopy.addEventListener('click', copyEmail )
+export {iconCopy, copyEmail}

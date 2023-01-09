@@ -1,6 +1,5 @@
-//Menu Hamburguer
 let menuHamburguer   = document.querySelector('#checkbox-menu');
-export function hamburguerMenu() {
+function hamburguerMenu() {
     let navegacao = document.querySelector('.header-top-navigation')
 
     if(menuHamburguer.checked == true) {
@@ -10,7 +9,6 @@ export function hamburguerMenu() {
     }
 }
 
-menuHamburguer.addEventListener('change', hamburguerMenu);
-
+export {menuHamburguer, hamburguerMenu}
 //Melhoria _ fechar o menu ao clickar em cada link
 // let linksDeNavegaçao = document.querySelectorAll('.header-top-navigation li a') 

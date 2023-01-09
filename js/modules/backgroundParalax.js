@@ -1,4 +1,3 @@
-//Background paralax
 const dataParalaxContainer = [...document.querySelectorAll('[data-paralax]')]
 
 function isGettingOut(container) {
@@ -11,7 +10,7 @@ function getNewPosition(c) {
     return c.getBoundingClientRect().top * v * -1
 }
 
-export function backgroundParalax() {
+function backgroundParalax() {
     dataParalaxContainer.forEach(c => {
         let originalPositionY = getComputedStyle(c).backgroundPositionY
         let originalPositionX = getComputedStyle(c).backgroundPositionX
@@ -24,6 +23,4 @@ export function backgroundParalax() {
     })
 }
 
-window.addEventListener('scroll', backgroundParalax)
-
-backgroundParalax()
+export {backgroundParalax}

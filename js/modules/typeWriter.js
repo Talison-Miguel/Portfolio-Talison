@@ -1,5 +1,5 @@
-//Efeito maquina de escrever
-export function typeWriter(elemento) {
+const titulo = document.querySelector('.header-bottom-parag');
+function typeWriter(elemento) {
     const textoArray = elemento.innerHTML.split('');
 
     elemento.innerHTML = '';
@@ -8,5 +8,4 @@ export function typeWriter(elemento) {
     });
 }
 
-const titulo = document.querySelector('.header-bottom-parag');
-typeWriter(titulo);
+export {typeWriter, titulo}

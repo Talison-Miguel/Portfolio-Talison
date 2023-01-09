@@ -1,9 +1,7 @@
-//Link ativo do menu
 const menuNav = document.querySelector('.header-top')
 const links = menuNav.querySelectorAll('li a')
 
-export function activeLink() {
-
+function activeLink() {
     //ta pegando cada seçao, s1,s2,s3
     let positions = [...links].map(link => {
         let href = link.getAttribute('href')
@@ -32,6 +30,4 @@ function pegaUltimoElementoVisto(_positions) {
     return links[positions.length - 1]
 }
 
-window.addEventListener('scroll', activeLink)
-
-activeLink()
+export {activeLink}
