@@ -9,7 +9,7 @@
   
   <img alt="JS" src="https://img.shields.io/badge/JavaScript-23.5%25-FFD700">
   
-  <img alt="SASS" src="https://img.shields.io/badge/ES-Modules25-FFD700">
+  <img alt="SASS" src="https://img.shields.io/badge/ES-Modules-FFD700">
 
   <br>
   
