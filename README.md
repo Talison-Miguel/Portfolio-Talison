@@ -37,7 +37,7 @@
 
 ## :rocket: Sobre o Repositório
 
-Este é um repositório contendo meu portfólio, e nele alguns projetos que fiz 😃
+Este é um repositório contendo meu portfólio, com meus projetos e minhas competências 😃
 
 ---
 
