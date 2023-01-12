@@ -1,6 +1,6 @@
 'use strict'
 
-import { hamburguerMenu, menuHamburguer } from "./modules/hamburguerMenu.js"
+import { openHamburgerMenu, closeHamburgerMenu, menuHamburguer, menuList } from "./modules/hamburguerMenu.js"
 import { copyEmail, iconCopy } from "./modules/copyEmail.js"
 import { typeWriter, titulo } from "./modules/typeWriter.js";
 import { animationBackgroundMenu } from "./modules/animationBackgroundMenu.js";
@@ -12,7 +12,8 @@ import { backgroundParalax } from "./modules/backgroundParalax.js";
 AOS.init({duration: 1000,});
 
 //Menu Hamburguer
-menuHamburguer.addEventListener('change', hamburguerMenu);
+menuHamburguer.addEventListener('change', openHamburgerMenu);
+menuList.addEventListener("click", closeHamburgerMenu)
 
 //Copiar Email
 iconCopy.addEventListener('click', copyEmail )
