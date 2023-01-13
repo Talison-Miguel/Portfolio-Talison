@@ -443,6 +443,9 @@ header {
   position: relative;
   display: inline-block;
 }
+.sobre-container .citeStiveJobs {
+  color: #fff;
+}
 
 .foguete {
   margin-left: 18px;
