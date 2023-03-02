@@ -88,18 +88,16 @@ p {
 
 header {
   background-image: url(../imgs/hero.jpg);
-  min-height: 660px;
+  min-height: 100vh;
   background-size: cover;
-  height: 87px;
-  background-position: 100% 100%;
-  background-attachment: scroll;
+  background-position: center;
+  background-attachment: local;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 @media (max-width: 1090px) {
   header {
     min-height: 100vh;
-    background-position: center;
   }
 }
 
