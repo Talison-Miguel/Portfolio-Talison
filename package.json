@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">  👨‍💻 Meu Portfólio 👨‍💻 </h1>",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/style.sass:css/style.css"
+    "dev": "sass --watch sass/style.sass:css/style.css"
   },
   "keywords": [],
   "author": "Tálison Miguel Amancio",
