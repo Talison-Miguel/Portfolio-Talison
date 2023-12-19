@@ -23,17 +23,23 @@ header
     height: 6.5rem
     align-items: center
     background-color: transparent    
-    transition: height 1s 
+    height: 5.25rem
+    transition: all 0.7s ease
     @include base-mixins.mobile-smm
         height: 5.438rem   
 
 
-.scroll
+.scroll 
+    content: "" 
     background-color: rgba(0, 0, 0, 0.8)
-    transition: all .5s ease
-    height: 5.25rem
-    @include base-mixins.mobile-smm
-        height: 5.438rem         
+    // transition: all 0.5s ease
+    transition: all 0.7s ease
+
+    @include base-mixins.mobile-smm 
+        height: 5.438rem
+        
+    
+
 
 .scroll2 p
     transition: all .3s ease

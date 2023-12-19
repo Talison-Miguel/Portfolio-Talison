@@ -111,7 +111,8 @@ header {
   height: 6.5rem;
   align-items: center;
   background-color: transparent;
-  transition: height 1s;
+  height: 5.25rem;
+  transition: all 0.7s ease;
 }
 @media (max-width: 1090px) {
   .container-menu {
@@ -120,9 +121,9 @@ header {
 }
 
 .scroll {
+  content: "";
   background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.5s ease;
-  height: 5.25rem;
+  transition: all 0.7s ease;
 }
 @media (max-width: 1090px) {
   .scroll {
@@ -448,7 +449,6 @@ header {
 .foguete {
   margin-left: 18px;
   top: -16px;
-  animation-name: ativarfoguete;
   position: absolute;
   animation: ativarfoguete 1.6s linear infinite;
   transform-origin: 28px 28px;
@@ -609,49 +609,49 @@ header {
   background: rgba(0, 0, 0, 0.4);
 }
 .container-projetos-conteudo .bia {
-  background-image: url("../imgs/background-bia.jpg");
+  background-image: url("../imgs/projects/background-bia.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .miami {
-  background-image: url("../imgs/background-miami.jpg");
+  background-image: url("../imgs/projects/background-miami.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .electrum {
-  background-image: url("../imgs/background-electrum.jpg");
+  background-image: url("../imgs/projects/background-electrum.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .agency {
-  background-image: url("../imgs/background-agency.jpg");
+  background-image: url("../imgs/projects/background-agency.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .formValid {
-  background-image: url("../imgs/background-formValid.jpg");
+  background-image: url("../imgs/projects/background-formValid.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .listTaref {
-  background-image: url("../imgs/background-listTaref.jpg");
+  background-image: url("../imgs/projects/background-listTaref.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .feedback {
-  background-image: url("../imgs/background-feedback.jpg");
+  background-image: url("../imgs/projects/background-feedback.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-projetos-conteudo .listAluno {
-  background-image: url("../imgs/lista-alunos.jpg");
+  background-image: url("../imgs/projects/lista-alunos.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
