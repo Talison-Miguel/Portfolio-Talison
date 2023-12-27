@@ -2,7 +2,7 @@ const menuNav = document.querySelector('.header-top')
 const links = menuNav.querySelectorAll('li a')
 
 function activeLink() {
-    //ta pegando cada seçao, s1,s2,s3
+    //pegando cada seçao, s1,s2,s3
     let positions = [...links].map(link => {
         let href = link.getAttribute('href')
         

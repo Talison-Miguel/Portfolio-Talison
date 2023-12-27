@@ -177,16 +177,25 @@ header {
   margin-right: 0;
 }
 .header-top-navigation li a {
-  transition: 0.4s;
+  transition: all 0.4s;
   border-bottom: 3px solid transparent;
 }
 .header-top-navigation li a:hover {
   color: #00b8e4;
 }
 .header-top .actived {
-  border-bottom: 3px solid #00b8e4;
   color: #00b8e4;
   padding: 2px;
+  position: relative;
+}
+.header-top .actived:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0px;
+  position: absolute;
+  background: #00b8e4;
 }
 .header-top .menuHamburguer {
   position: absolute;
@@ -196,7 +205,6 @@ header {
   width: 100%;
   height: auto;
   padding: 50px 20px;
-  background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(17, 17, 17, 0.95);
   transition: 1s ease-in-out;
 }

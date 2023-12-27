@@ -32,7 +32,6 @@ header
 .scroll 
     content: "" 
     background-color: rgba(0, 0, 0, 0.8)
-    // transition: all 0.5s ease
     transition: all 0.7s ease
 
     @include base-mixins.mobile-smm 
@@ -81,15 +80,26 @@ header
                 margin-right: 0
 
             a
-                transition: .4s
+                transition: all .4s
                 border-bottom: 3px solid transparent
                 @include layouts-mixins.hover-blue 
 
     .actived
-        border-bottom: 3px solid variables.$color-blue
         color: variables.$color-blue
         padding: 2px
+        position: relative
 
+        &:before 
+            content: ''
+            width: calc( 100% )
+            height: 3px
+            bottom: -3px
+            left: 0px
+            position: absolute
+            background: variables.$color-blue
+            
+        
+            
 
     //classe que vai ser adicionada ao clicar no menu hamburguer
     .menuHamburguer
@@ -100,7 +110,7 @@ header
         width: 100%
         height: auto
         padding: 50px 20px
-        background-color: rgba(0, 0, 0, 0.9)
+        // background-color: rgba(0, 0, 0, 0.9)
         border: 1px solid rgba(17, 17, 17, 0.95)
         transition: 1s ease-in-out
 
