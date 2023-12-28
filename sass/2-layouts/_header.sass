@@ -112,12 +112,16 @@ header
         padding: 50px 20px
         background-color: rgba(0, 0, 0, 0.9)
         border: 1px solid rgba(17, 17, 17, 0.95)
-        transition: 1s ease-in-out
+        z-index: -2    
+        transition: transform 0.6s 
+        transform: translateY(-140%)
 
         li
             margin-bottom: 10px
             font-size: 20px
             line-height: 1.8
+            transition: 0.2s
+
 
     &-containerHambuguer
         display: none    
