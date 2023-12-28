@@ -1,5 +1,6 @@
 let menuHamburguer   = document.querySelector('#checkbox-menu');
 let menuList = document.querySelector('.header-top-navigation')
+let menuListlinks = [...document.querySelectorAll('.header-top-navigation li a')]
 const links = [...menuList.querySelectorAll('li')]
 
 
@@ -41,4 +42,6 @@ function closeHamburgerMenu() {
     }
 }
 
-export {openHamburgerMenu, menuHamburguer, handleResize, closeHamburgerMenu, menuList}
+console.log(menuListlinks)
+
+export {openHamburgerMenu, menuHamburguer, handleResize, closeHamburgerMenu, menuListlinks}

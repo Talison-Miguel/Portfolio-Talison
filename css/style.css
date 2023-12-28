@@ -171,7 +171,6 @@ header {
 .header-top-navigation li {
   font-weight: 600;
   margin-right: 1.875rem;
-  cursor: pointer;
 }
 .header-top-navigation li:last-child {
   margin-right: 0;
@@ -179,6 +178,7 @@ header {
 .header-top-navigation li a {
   transition: all 0.4s;
   border-bottom: 3px solid transparent;
+  cursor: pointer;
 }
 .header-top-navigation li a:hover {
   color: #00b8e4;

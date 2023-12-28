@@ -1,6 +1,6 @@
 'use strict'
 
-import { openHamburgerMenu, menuHamburguer, handleResize, closeHamburgerMenu, menuList } from "./modules/hamburguerMenu.js"
+import { openHamburgerMenu, menuHamburguer, handleResize, closeHamburgerMenu, menuListlinks } from "./modules/hamburguerMenu.js"
 import { copyEmail, iconCopy } from "./modules/copyEmail.js"
 import { typeWriter, titulo } from "./modules/typeWriter.js";
 import { animationBackgroundMenu } from "./modules/animationBackgroundMenu.js";
@@ -14,7 +14,9 @@ AOS.init({duration: 1000,});
 //Menu Hamburguer
 menuHamburguer.addEventListener('change', openHamburgerMenu);
 window.addEventListener('resize', handleResize);
-menuList.addEventListener('click', closeHamburgerMenu);
+menuListlinks.map(link => {
+    link.addEventListener('click', closeHamburgerMenu);
+})
 
 
 
