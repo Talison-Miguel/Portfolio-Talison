@@ -9,7 +9,9 @@
   
   <img alt="JS" src="https://img.shields.io/badge/JavaScript-23.5%25-FFD700">
   
-  <img alt="SASS" src="https://img.shields.io/badge/ES-Modules-FFD700">
+  <img alt="ES-MODULES" src="https://img.shields.io/badge/ES-Modules-FFD700">
+
+  <img alt="GULP.JS" src="https://img.shields.io/badge/Gulp-Js-red">
 
   <br>
   
@@ -47,6 +49,7 @@ Este é um repositório contendo meu portfólio, com meus projetos e minhas comp
 ✅ [ CSS ](https://developer.mozilla.org/pt-BR/docs/Web/CSS) <br/>
 ✅ [ HTML ](https://developer.mozilla.org/pt-BR/docs/Web/HTML) <br/>
 ✅ [ JavaScript ](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) <br/>
+✅ [ Gulp ](https://gulpjs.com/) <br/>
 
 ### Padronização de código
 
