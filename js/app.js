@@ -1,7 +1,6 @@
 'use strict'
 
 import { openHamburgerMenu, menuHamburguer, handleResize, closeHamburgerMenu, menuListlinks } from "./modules/hamburguerMenu.js"
-import { copyEmail, iconCopy } from "./modules/copyEmail.js"
 import { typeWriter, titulo } from "./modules/typeWriter.js";
 import { animationBackgroundMenu } from "./modules/animationBackgroundMenu.js";
 import { animationOfSkills } from "./modules/animationOfSkills.js";
@@ -18,10 +17,6 @@ menuListlinks.map(link => {
     link.addEventListener('click', closeHamburgerMenu);
 })
 
-
-
-//Copiar Email
-iconCopy.addEventListener('click', copyEmail )
 
 //Efeito maquina de escrever
 typeWriter(titulo);
