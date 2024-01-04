@@ -73,7 +73,7 @@ h1 {
   font-family: "Montserrat";
   display: block;
   text-align: center;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 768px) {
   h1 {
@@ -700,7 +700,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   position: relative;
   transition: all 0.8s;
 }
