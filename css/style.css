@@ -518,6 +518,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 4.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 .competencias-container-lista-item {
   width: 20%;
