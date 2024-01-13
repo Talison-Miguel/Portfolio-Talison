@@ -25,8 +25,13 @@ export async function getData(data) {
             svg.style.transition = 'fill .3s ease-in'
             svg.style.cursor = 'pointer'
             
-            elementoPai.addEventListener('mouseover', () => {svg.style.fill = 'white'});
-            elementoPai.addEventListener('mouseout', () => {svg.style.fill = '#00b8e4'});
+            elementoPai.addEventListener('mouseover', () => {
+                svg.style.fill = 'white'
+            });
+            
+            elementoPai.addEventListener('mouseout', () => {
+                svg.style.fill = '#00b8e4'
+            });
 
         })
     });
