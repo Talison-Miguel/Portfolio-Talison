@@ -527,8 +527,9 @@ header {
   border: 1px solid #060606;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
-.competencias-container-lista-item:hover::before, .competencias-container-lista-item:hover::after {
+.competencias-container-lista-item:hover:before, .competencias-container-lista-item:hover:after {
   opacity: 1;
   width: 1.125rem;
   height: 1.125rem;
@@ -555,6 +556,10 @@ header {
   border-right: 2px solid #fff;
 }
 .competencias-container-lista-item img {
+  margin: 0 auto;
+  display: block;
+}
+.competencias-container-lista-item object {
   margin: 0 auto;
   display: block;
 }

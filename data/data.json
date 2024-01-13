@@ -1,0 +1,64 @@
+{
+    "skills": [
+        {
+            "alt": "Logo html",
+            "url": "imgs/skills/html-icon.svg",
+            "name": "Html"
+        },
+        {
+            "alt": "Logo javaScript",
+            "url": "imgs/skills/javascrip-icon.svg",
+            "name": "JavaScript (ES6)"
+        },
+        {
+            "alt": "Logo typescript",
+            "url": "imgs/skills/typescript-icon.svg",
+            "name": "Typescript"
+        },
+        {
+            "alt": "React",
+            "url": "imgs/skills/react-icon.svg",
+            "name": "React"
+        },
+        {
+            "alt": "Logo css",
+            "url": "imgs/skills/css-icon.svg",
+            "name": "Css"
+        },
+        {
+            "alt": "Logo sass",
+            "url": "imgs/skills/sass-icon.svg",
+            "name": "Sass"
+        },
+        {
+            "alt": "Logo less",
+            "url": "imgs/skills/less-icon.svg",
+            "name": "Less"
+        },
+        {
+            "alt": "Logo tailwind",
+            "url": "imgs/skills/tailwind-icon.svg",
+            "name": "Tailwind Css"
+        },
+        {
+            "alt": "Logo gi",
+            "url": "imgs/skills/git-icon.svg",
+            "name": "Git"
+        },
+        {
+            "alt": "Logo photoshop",
+            "url": "imgs/skills/photoshop-icon.svg",
+            "name": "Photoshop"
+        },
+        {
+            "alt": "Logo illustrator",
+            "url": "imgs/skills/illustrator-icon.svg",
+            "name": "Illustrator"
+        },
+        {
+            "alt": "Logo figma",
+            "url": "imgs/skills/figma-icon.svg",
+            "name": "Figma"
+        }
+    ]
+}

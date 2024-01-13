@@ -19,18 +19,18 @@
 
             &-item
                 width: 20%
-                min-width: 11.875rem //190px
+                min-width: 11.875rem
                 padding: 40px 0
                 border: 1px solid variables.$color-gray
                 box-sizing: border-box
                 position: relative
+                cursor: pointer
                 
 
-                &:hover
-                    &::before, &::after
-                        opacity: 1
-                        width: 1.125rem
-                        height: 1.125rem
+                &:hover:before, &:hover:after
+                    opacity: 1
+                    width: 1.125rem
+                    height: 1.125rem
 
                 &::before, &::after
                     content: ''
@@ -57,7 +57,10 @@
                 img
                     margin: 0 auto
                     display: block
-
+                
+                object
+                    margin: 0 auto
+                    display: block
 
                 h3
                     font-size: 1.25rem
@@ -66,6 +69,3 @@
                     line-height: 1.2
                     text-align: center
                     margin-top: 1.125rem
-
-
-                    

@@ -6,9 +6,11 @@ import { animationBackgroundMenu } from "./modules/animationBackgroundMenu.js";
 import { animationOfSkills } from "./modules/animationOfSkills.js";
 import { activeLink } from "./modules/activeLink.js";
 import { backgroundParalax } from "./modules/backgroundParalax.js";
+import { getData } from "./modules/fetchSkills.js";
 
 
-AOS.init({duration: 1000,});
+
+AOS.init({duration: 1000});
 
 //Menu Hamburguer
 menuHamburguer.addEventListener('change', openHamburgerMenu);
@@ -34,3 +36,6 @@ activeLink()
 //Background paralax
 window.addEventListener('scroll', backgroundParalax)
 backgroundParalax()
+
+//Get dados competencias
+getData('../../data/data.json')
