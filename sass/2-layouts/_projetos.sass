@@ -53,15 +53,18 @@
             z-index: 4
             cursor: pointer
             transform: scale(1.08)
-            // border: 1px solid variables.$color-blue
+            border: 3px solid variables.$color-blue 
 
             &::after
                 background: rgba(0, 0, 0, 0.3)
             
-            // &-title
-            //     background: red
+            h2
+                color: variables.$color-white
+                margin-top: 130%
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)
+                font-size: 1.03rem
+                opacity: 0
             
-
     .bia 
         background-image: url("../imgs/projects/background-bia.jpg")
         background-position: center
@@ -102,16 +105,3 @@
         background-image: url("../imgs/projects/lista-alunos.jpg")
         background-position: left
         @include layouts-mixins.img-projetos
-
-
-.container-projetos-conteudo-item:hover
-    border: 3px solid variables.$color-blue 
-    
-
-.container-projetos-conteudo-item:hover h2
-    color: variables.$color-white
-    margin-top: 130%
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)
-    font-size: 1.03rem
-    opacity: 0
-    // color: variables.$color-black

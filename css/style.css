@@ -627,9 +627,17 @@ header {
   z-index: 4;
   cursor: pointer;
   transform: scale(1.08);
+  border: 3px solid #00b8e4;
 }
 .container-projetos-conteudo-item:hover::after, .container-projetos-conteudo a:hover::after {
   background: rgba(0, 0, 0, 0.3);
+}
+.container-projetos-conteudo-item:hover h2, .container-projetos-conteudo a:hover h2 {
+  color: #fff;
+  margin-top: 130%;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 1.03rem;
+  opacity: 0;
 }
 .container-projetos-conteudo .bia {
   background-image: url("../imgs/projects/background-bia.jpg");
@@ -678,18 +686,6 @@ header {
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.container-projetos-conteudo-item:hover {
-  border: 3px solid #00b8e4;
-}
-
-.container-projetos-conteudo-item:hover h2 {
-  color: #fff;
-  margin-top: 130%;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  font-size: 1.03rem;
-  opacity: 0;
 }
 
 .contato {
