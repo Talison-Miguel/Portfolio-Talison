@@ -583,6 +583,7 @@ header {
   flex-wrap: wrap;
   gap: 4.5rem;
   justify-content: center;
+  transition: all 0.5s;
 }
 .container-projetos-conteudo-item, .container-projetos-conteudo a {
   border: 2px solid #fff;
@@ -597,6 +598,8 @@ header {
   align-items: center;
   position: relative;
   transition: transform 0.5s, border 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
 }
 .container-projetos-conteudo-item::after, .container-projetos-conteudo a::after {
   content: "";
@@ -613,6 +616,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   z-index: 2;
+  transition: all 0.7s;
 }
 @media (max-width: 768px) {
   .container-projetos-conteudo-item-title, .container-projetos-conteudo a-title {
@@ -625,7 +629,7 @@ header {
   transform: scale(1.08);
 }
 .container-projetos-conteudo-item:hover::after, .container-projetos-conteudo a:hover::after {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
 }
 .container-projetos-conteudo .bia {
   background-image: url("../imgs/projects/background-bia.jpg");
@@ -674,6 +678,18 @@ header {
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.container-projetos-conteudo-item:hover {
+  border: 3px solid #00b8e4;
+}
+
+.container-projetos-conteudo-item:hover h2 {
+  color: #fff;
+  margin-top: 130%;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 1.03rem;
+  opacity: 0;
 }
 
 .contato {

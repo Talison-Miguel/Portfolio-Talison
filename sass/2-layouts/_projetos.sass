@@ -11,6 +11,7 @@
     flex-wrap: wrap
     gap: 4.5rem
     justify-content: center
+    transition: all .5s
 
     &-item, a
         border: 2px solid variables.$color-white
@@ -25,6 +26,8 @@
         align-items: center
         position: relative
         transition: transform .5s, border .5s
+        transition: all 0.5s
+        overflow: hidden
 
         &::after
             content: ''
@@ -41,6 +44,7 @@
             color: variables.$color-white
             text-transform: uppercase
             z-index: 2
+            transition: all .7s
 
             @include base-mixins.mobile-sm
                 font-size: 1rem
@@ -49,9 +53,14 @@
             z-index: 4
             cursor: pointer
             transform: scale(1.08)
+            // border: 1px solid variables.$color-blue
 
             &::after
-                background: rgba(0, 0, 0, 0.4)
+                background: rgba(0, 0, 0, 0.3)
+            
+            // &-title
+            //     background: red
+            
 
     .bia 
         background-image: url("../imgs/projects/background-bia.jpg")
@@ -93,3 +102,16 @@
         background-image: url("../imgs/projects/lista-alunos.jpg")
         background-position: left
         @include layouts-mixins.img-projetos
+
+
+.container-projetos-conteudo-item:hover
+    border: 3px solid variables.$color-blue 
+    
+
+.container-projetos-conteudo-item:hover h2
+    color: variables.$color-white
+    margin-top: 130%
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)
+    font-size: 1.03rem
+    opacity: 0
+    // color: variables.$color-black
