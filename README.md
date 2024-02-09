@@ -78,7 +78,7 @@ Para copiar o projeto, utilize os comandos:
 
 <p align="center">
 
-  <a href="https://www.linkedin.com/in/t%C3%A1lison-miguel/">
+  <a href="https://www.linkedin.com/in/talison-miguel/">
     <img alt="Tálison Miguel Amancio" src="https://img.shields.io/badge/LinkedIn-Tálison_Miguel-0e76a8?style=flat&logoColor=white&logo=linkedin">
   </a>
   <a href="https://www.facebook.com/profile.php?id=100009099058734">
